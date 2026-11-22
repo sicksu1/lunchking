@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>급식판 조작</title>
+<style>
+
+  button.sq{ width:93px; height:93px; }
+</style>
+</head>
+<body>
+
+  <h1>조작</h1>
+
+  <div id="controlBody">
+
+  </div>
+
+  <hr>
+
+  <h2>오늘의 급식</h2>
+  <input type="text" id="menuInput" size="40" placeholder="예: 흰쌀밥, 미역국, 제육볶음, 김치">
+  <button onclick="saveMenu()">저장</button>
+
+  <hr>
+
+  <h2>자동 넘김</h2>
+  <p>1분마다 다음 반으로 자동 이동</p>
+  <button onclick="toggleAuto()" id="autoToggle">자동 넘김: 꺼짐</button>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="control.js"></script>
+</body>
+</html>

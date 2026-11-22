@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>급식 먹으러 갈 반</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="display-body">
+
+  <div class="page">
+    <h1 class="title">급식 먹으러 갈 반</h1>
+    <div class="menu-footer">오늘의 급식 : <span id="menuText">-</span></div>
+    <div class="board" id="board"></div>
+  </div>
+
+  <div class="broadcast" id="broadcast">
+    <div class="grade-panel g1" id="bg1">
+      <div class="panel-label">1학년</div>
+      <div class="panel-number" id="bgNum1">1-1</div>
+    </div>
+    <div class="grade-panel g2" id="bg2">
+      <div class="panel-label">2학년</div>
+      <div class="panel-number" id="bgNum2">2-1</div>
+    </div>
+    <div class="grade-panel g3" id="bg3">
+      <div class="panel-label">3학년</div>
+      <div class="panel-number" id="bgNum3">3-1</div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
